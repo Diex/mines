@@ -5,7 +5,10 @@ import sys
 pygame.init()
 
 # Set the size of the window
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN | pygame.HWSURFACE | pygame.DOUBLEBUF)
+
+# Set the size of the window
+# self._display_surf = pygame.display.set_mode(self.size, pygame.HWSURFACE | pygame.DOUBLEBUF)
 
 # Set the title of the window
 pygame.display.set_caption('Hello, World!')
