@@ -71,7 +71,7 @@ def main():
             current_video += 1
             if current_video >= len(movies):
                 current_video = 0
-            play_video(player, movies[current_video])
+            play_video(movies[current_video])
             player.play()
             # player.stop()
 
